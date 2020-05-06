@@ -36,11 +36,8 @@ namespace WpfApp1
         {
             if (e.Key == Key.Enter)
             {
-                Current.Text = Search.Text;
-                Search.Text = "";
-                Links.Text = "";
-
-                SearchWikipedia(Current.Text);
+                
+                SearchWikipedia(Search.Text);
             }
             
 
@@ -52,8 +49,10 @@ namespace WpfApp1
         {
             try
             {
+                Current.Text = title;
+                Search.Text = "";
+
                 HttpResponseMessage response = await client.GetAsync(wikiURL+title+urlEnd);
-                Search.Text = wikiURL + title + urlEnd;
                 response.EnsureSuccessStatusCode();
 
                 string a = await response.Content.ReadAsStringAsync();
@@ -66,6 +65,8 @@ namespace WpfApp1
 
 
                 int count = 0;
+
+
 
                 foreach (JsonProperty k in pages.EnumerateObject())
                 {
@@ -89,10 +90,13 @@ namespace WpfApp1
                     }
 
                 }
-                Links.Text = "";
+
+                Links.Items.Clear();
+
                 foreach(string name in wikiTitles)
                 {
-                    Links.AppendText(name + "\n");
+                    //Links.AppendText(name + "\n");
+                    Links.Items.Add(name.ToString());
 
                 }
 
@@ -105,6 +109,17 @@ namespace WpfApp1
             }
 
 
+        }
+
+        private void Links_MouseClick(object sender, MouseButtonEventArgs e)
+        {
+            foreach(string i in Links.Items)
+            {
+                if(Links.Items.GetItemAt(Links.SelectedIndex).ToString().Equals(i))
+                {
+                    SearchWikipedia(i);
+                }
+            }
         }
     }
 
