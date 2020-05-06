@@ -23,8 +23,8 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         static readonly HttpClient client = new HttpClient();
-        private string wikiURL = "http://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=";
-        private string urlEnd = "&format=json";
+        private string wikiURL = "http://en.wikipedia.org/w/api.php?action=query&titles=";
+        private string urlEnd = "&prop=links&pllimit=100&format=json";
         public MainWindow()
         {
             InitializeComponent();
