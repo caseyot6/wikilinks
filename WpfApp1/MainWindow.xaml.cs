@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Net.Http;
 using System.Windows.Shapes;
 using System.Text.Json;
+using System.Diagnostics;
 
 
 namespace WpfApp1
@@ -120,6 +121,18 @@ namespace WpfApp1
                     SearchWikipedia(i);
                 }
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            var process = new ProcessStartInfo("http://wikipedia.org/wiki/"+Current.Text)
+            {
+                UseShellExecute = true,
+                Verb = "open"
+            };
+            Process.Start(process);
+
         }
     }
 

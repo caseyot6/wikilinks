@@ -10,11 +10,13 @@
         <Canvas Name ="Wikipedia">
             <Label Canvas.Left="238" Canvas.Top="43">Search Wikipedia:</Label>
             <Label Canvas.Left="169" Canvas.Top="175" VerticalAlignment="Center">Current Page :</Label>
+            <Button Height="30" Width="64" Canvas.Left="567" VerticalAlignment="Center" Canvas.Top="175" Click="Button_Click"> Visit Page</Button>
 
             <TextBox Name ="Search"  KeyDown="OnKeyDown" Canvas.Left="347" Canvas.Top="40"  Height="32" Width="106" VerticalContentAlignment="Center" AcceptsReturn="False">
             </TextBox>
 
             <TextBlock Name ="Current" Height="30" Width="130" VerticalAlignment="Center"  Canvas.Left="259" Canvas.Top="180"/>
+            
 
             <ScrollViewer Canvas.Left="169" Canvas.Top="217" Height="162" Width="462">
                 <ListView Name ="Links" SelectionMode="Single" MouseDoubleClick="Links_MouseClick">
