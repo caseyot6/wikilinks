@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Net.Http;
 using System.Windows.Shapes;
+using System.Text.Json;
 
 
 namespace WpfApp1
@@ -24,7 +25,7 @@ namespace WpfApp1
     {
         static readonly HttpClient client = new HttpClient();
         private string wikiURL = "http://en.wikipedia.org/w/api.php?action=query&titles=";
-        private string urlEnd = "&prop=links&pllimit=100&format=json";
+        private string urlEnd = "&prop=links&pllimit=max&format=json";
         public MainWindow()
         {
             InitializeComponent();
@@ -55,12 +56,50 @@ namespace WpfApp1
                 Search.Text = wikiURL + title + urlEnd;
                 response.EnsureSuccessStatusCode();
 
-                Links.Text = await response.Content.ReadAsStringAsync();
+                string a = await response.Content.ReadAsStringAsync();
+                JsonDocument b = JsonDocument.Parse(a);
+
+                JsonElement pages = b.RootElement.GetProperty("query").GetProperty("pages");
+
+
+                List<string> wikiTitles = new List<String>();
+
+
+                int count = 0;
+
+                foreach (JsonProperty k in pages.EnumerateObject())
+                {
+                    count += 1;
+                    
+
+                    JsonElement links = pages.GetProperty(k.Name).GetProperty("links");
+
+                    foreach (JsonElement l in links.EnumerateArray())
+                    {
+
+                        
+                        wikiTitles.Add(l.GetProperty("title").ToString());
+
+                    }
+                    
+                    if (count > 0)
+                    {
+                        
+                        break;
+                    }
+
+                }
+                Links.Text = "";
+                foreach(string name in wikiTitles)
+                {
+                    Links.AppendText(name + "\n");
+
+                }
+
                
-                
 
             }
-            catch(HttpRequestException e)
+            catch
             {
                 Console.WriteLine("Problem Encountered");
             }

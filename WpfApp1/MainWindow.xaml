@@ -13,7 +13,7 @@
             </TextBox>
 
             <TextBlock Name ="Current" Height="60" Width="169" Canvas.Left="474" Canvas.Top="26"></TextBlock>
-            <TextBox Name ="Links" Canvas.Left="306" Canvas.Top="136" Height="162" Width="462">
+            <TextBox Name ="Links" Canvas.Left="306" Canvas.Top="136" Height="162" Width="462" TextWrapping="Wrap">
             </TextBox>
 
 
