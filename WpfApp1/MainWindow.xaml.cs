@@ -39,7 +39,7 @@ namespace WpfApp1
                 Search.Text = "";
                 Links.Text = "";
 
-                SearchWikipedia(Search.Text);
+                SearchWikipedia(Current.Text);
             }
             
 
@@ -52,7 +52,7 @@ namespace WpfApp1
             try
             {
                 HttpResponseMessage response = await client.GetAsync(wikiURL+title+urlEnd);
-                Console.WriteLine("wikiURL + title + urlEnd");
+                Search.Text = wikiURL + title + urlEnd;
                 response.EnsureSuccessStatusCode();
 
                 Links.Text = await response.Content.ReadAsStringAsync();
