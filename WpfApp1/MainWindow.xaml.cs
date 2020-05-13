@@ -114,7 +114,7 @@ namespace WpfApp1
             }
             catch
             {
-                MessageBox.Show("Search requires stable internet connection");
+                MessageBox.Show("Page not found.");
             }
 
 
