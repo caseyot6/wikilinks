@@ -5,20 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Wikipedia's WikiLinks" Height="450" Width="800">
+        Title="Wikipedia's WikiLinks" Height="664" Width="563" ResizeMode="NoResize">
     <Grid>
-        <Canvas Name ="Wikipedia">
-            <Label Canvas.Left="238" Canvas.Top="43">Search Wikipedia:</Label>
-            <Label Canvas.Left="169" Canvas.Top="175" VerticalAlignment="Center">Current Page :</Label>
-            <Button Height="30" Width="123" Canvas.Left="508" Canvas.Top="175" Click="Button_Click">Visit Page In Browser</Button>
+        <Canvas Name ="Wikipedia" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.116"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.398"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Label Canvas.Left="180" Canvas.Top="207">1. Type page name and press enter:</Label>
+            <Label Canvas.Left="150" Canvas.Top="271">2. Double click page link to view links on its page</Label>
+            <Label Canvas.Left="225" Canvas.Top="68" Height="90" Width="111" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="DemiBold" FontFamily="Times New Roman"
+                   FontSize="100">W</Label>
 
-            <TextBox Name ="Search"  KeyDown="OnKeyDown" Canvas.Left="347" Canvas.Top="40"  Height="32" Width="106" VerticalContentAlignment="Center" AcceptsReturn="False">
+            <Button Height="30" Width="123" Canvas.Left="387" Canvas.Top="311" Click="Button_Click">Visit Page In Browser</Button>
+
+            <TextBox Name ="Search"  KeyDown="OnKeyDown" Canvas.Left="165" Canvas.Top="240"  Height="32" Width="224" VerticalContentAlignment="Center" AcceptsReturn="False">
             </TextBox>
 
-            <TextBlock Name ="Current" Height="30" Width="130" VerticalAlignment="Center"  Canvas.Left="259" Canvas.Top="180"/>
+            <TextBlock Name ="Current" Height="30" Width="310" Canvas.Left="53" Canvas.Top="319"/>
+            <TextBlock Name ="InitialText" Height="17" Width="310" Canvas.Left="134" Canvas.Top="530"/>
+            <TextBlock Name ="Distance"  Height="20" Width="310" Canvas.Left="208" Canvas.Top="573"/>
+            <TextBlock Canvas.Left="50" Canvas.Top="529">Initial search:</TextBlock>
+            <TextBlock Canvas.Left="51" Canvas.Top="574">Distance from initial search:</TextBlock>
 
 
-            <ScrollViewer Canvas.Left="169" Canvas.Top="217" Height="162" Width="462">
+            <ScrollViewer Canvas.Left="50" Canvas.Top="350" Height="162" Width="462">
                 <ListView Name ="Links" SelectionMode="Single" MouseDoubleClick="Links_MouseClick">
 
                 </ListView>

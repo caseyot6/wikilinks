@@ -14,3 +14,4 @@ C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Debug\netcorea
 C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Debug\netcoreapp3.1\WpfApp1.AssemblyInfo.cs
 C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Debug\netcoreapp3.1\WpfApp1.dll
 C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Debug\netcoreapp3.1\WpfApp1.pdb
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Debug\netcoreapp3.1\WpfApp1.csprojAssemblyReference.cache

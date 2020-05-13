@@ -27,6 +27,7 @@ namespace WpfApp1
         static readonly HttpClient client = new HttpClient();
         private string wikiURL = "http://en.wikipedia.org/w/api.php?action=query&titles=";
         private string urlEnd = "&prop=links&pllimit=max&format=json";
+        private int distance = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -37,8 +38,10 @@ namespace WpfApp1
         {
             if (e.Key == Key.Enter)
             {
-                
+                InitialText.Text = Search.Text;
+                distance = 0;
                 SearchWikipedia(Search.Text);
+                
             }
             
 
@@ -50,8 +53,13 @@ namespace WpfApp1
         {
             try
             {
+
+
+
+               
                 Current.Text = title;
                 Search.Text = "";
+                Distance.Text = distance.ToString();
 
                 HttpResponseMessage response = await client.GetAsync(wikiURL+title+urlEnd);
                 response.EnsureSuccessStatusCode();
@@ -106,7 +114,7 @@ namespace WpfApp1
             }
             catch
             {
-                Console.WriteLine("Problem Encountered");
+                MessageBox.Show("Search requires stable internet connection");
             }
 
 
@@ -118,9 +126,11 @@ namespace WpfApp1
             {
                 if(Links.Items.GetItemAt(Links.SelectedIndex).ToString().Equals(i))
                 {
+                    distance += 1;
                     SearchWikipedia(i);
                 }
             }
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
