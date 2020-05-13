@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Wikipedia's WikiLinks" Height="664" Width="563" ResizeMode="NoResize">
+        Title="Wikipedia's Links" Height="664" Width="563" ResizeMode="NoResize">
     <Grid>
         <Canvas Name ="Wikipedia" RenderTransformOrigin="0.5,0.5">
             <Canvas.RenderTransform>
