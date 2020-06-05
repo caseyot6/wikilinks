@@ -6,6 +6,25 @@
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x64</Platforms>
     <ApplicationIcon>sprite_0001_FPo_icon.ico</ApplicationIcon>
+    <AssemblyName>Wikipedia Explorer</AssemblyName>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath>C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputPath>C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\</OutputPath>
+  </PropertyGroup>
+  
+  
 
 </Project>

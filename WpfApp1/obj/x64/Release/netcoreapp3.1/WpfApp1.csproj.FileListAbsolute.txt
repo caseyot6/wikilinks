@@ -1,0 +1,23 @@
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.exe
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.deps.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.runtimeconfig.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.runtimeconfig.dev.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.dll
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\bin\x64\Release\netcoreapp3.1\Wikipedia Explorer.pdb
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.exe
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.deps.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.runtimeconfig.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.runtimeconfig.dev.json
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.dll
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\Wikiproject\netcoreapp3.1\Wikipedia Explorer.pdb
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\App.g.cs
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\Wikipedia Explorer_MarkupCompile.cache
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\Wikipedia Explorer_MarkupCompile.lref
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\MainWindow.baml
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\Wikipedia Explorer.g.resources
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\WpfApp1.AssemblyInfoInputs.cache
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\WpfApp1.AssemblyInfo.cs
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\Wikipedia Explorer.dll
+C:\Users\Chileshe Otieno\Documents\GitHub\c-sharp\WpfApp1\obj\x64\Release\netcoreapp3.1\Wikipedia Explorer.pdb
